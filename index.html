@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>CEASAR CODE</title>
+  </head>
+  <body>
+    <div class="input-container">
+      <label class="input-label" for="user-input"
+        >Enter the text to encrypt!</label
+      >
+      <textarea
+        name="message"
+        id="user-input"
+        rows="5"
+        cols="40"
+        placeholder="Write your text here..."
+      ></textarea>
+
+      <label for="step">Choose your step for encrypt</label>
+      <input type="number" id="step" name="step" min="1" max="24" value="1" />
+
+      <!-- <input type="radio" id="one" name="shift" value="1" />
+      <label for="one">one</label>
+      <input type="radio" id="two" name="shift" value="2" />
+      <label for="two">two</label>
+      <input type="radio" id="three" name="shift" value="3" />
+      <label for="three">three</label> -->
+
+      <button id="btn">Start encrypt</button>
+      <p id="output-code"></p>
+    </div>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
