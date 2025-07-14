@@ -7,11 +7,19 @@
     <title>CEASAR CODE</title>
   </head>
   <body>
+    <div class="option-container">
+      <label for="lang-select">Select language for encript</label>
+      <select name="" id="lang-select">
+        <option value="en">English</option>
+        <option value="uk">Ukrainian</option>
+      </select>
+    </div>
     <div class="input-container">
       <label class="input-label" for="user-input"
         >Enter the text to encrypt!</label
       >
       <textarea
+        class="textarea"
         name="message"
         id="user-input"
         rows="5"
@@ -19,19 +27,24 @@
         placeholder="Write your text here..."
       ></textarea>
 
-      <label for="step">Choose your step for encrypt</label>
-      <input type="number" id="step" name="step" min="1" max="24" value="1" />
+      <label class="number-label" for="step"
+        >Choose your step for encrypt or decrypt</label
+      >
+      <input
+        class="step"
+        type="number"
+        id="step"
+        name="step"
+        min="1"
+        max="24"
+        value="1"
+      />
+      <div class="btn-container">
+        <button id="btn" class="btn">Start encrypt</button>
+        <button id="btn-decrypt" class="btn">Start decrypt</button>
+      </div>
 
-      <!-- <input type="radio" id="one" name="shift" value="1" />
-      <label for="one">one</label>
-      <input type="radio" id="two" name="shift" value="2" />
-      <label for="two">two</label>
-      <input type="radio" id="three" name="shift" value="3" />
-      <label for="three">three</label> -->
-
-      <button id="btn">Start encrypt</button>
-      <button id="btn-decrypt">Start decrypt</button>
-      <p id="output-code"></p>
+      <p class="output-text" id="output-code"></p>
     </div>
 
     <script type="module" src="./script.js"></script>

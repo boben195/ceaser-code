@@ -2,6 +2,14 @@
     margin: 0 auto;
     padding: 0;
 }
+body {
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+.option-container {
+    margin-left: 80px;
+}
 .input-container {
     display: flex;
     flex-direction: column;
@@ -12,4 +20,38 @@
 }
 .input-label {
     margin: 20px;
+}
+.textarea, .step {
+    background-color: #98b9d3;
+    border-radius: 5px;
+}
+.number-label {
+    margin: 20px;
+    font-size: large;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 40px;
+}
+.btn {
+    display: block;
+    width: 40%;
+    padding: 10px;
+    background-color: #98b9d3;
+    color: #000;
+    border: 1px solid #1916a6;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+.btn:hover {
+    background-color: #6a8da8;
+}
+.output-text {
+    margin-top: 20px;
 }
